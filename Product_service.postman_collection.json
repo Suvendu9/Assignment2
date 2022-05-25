@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "bba8dfd7-63ab-453d-9fdd-e2f9af16e2b3",
+		"name": "Product_service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create_product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"productName\":\"Bed\",\r\n\t\"product_big_Image\":\"BedImage\",\r\n\t\"product_thumb_nail\":\"Bedthumbnail\",\r\n\t\"product_description\":\"double\",\r\n\t\"product_short_decription\":\"brown\",\r\n\t\"product_ratings\":7,\r\n    \"price\":700.00,\r\n\t\"isActive\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SeatchByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/product/name/Bed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"product",
+						"name",
+						"Bed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/product/628dafe1d2a5a16a0756883b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"product",
+						"628dafe1d2a5a16a0756883b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

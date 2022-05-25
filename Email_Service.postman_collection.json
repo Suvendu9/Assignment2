@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "a1e72fe5-b537-4112-8ae0-190f5a01d643",
+		"name": "Email_Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"recipient\": \"suvendu97panigrahi@gmail.com\",\r\n\t\"msgBody\": \"{product core details}\",\r\n    \"subject\": \"product info\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8989/api/sendMail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"api",
+						"sendMail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
